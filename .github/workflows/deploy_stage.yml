@@ -28,7 +28,7 @@ jobs:
           os: ${{ matrix.os }}
           version: 8.x.x
       - name: Auth
-        uses: adobe/aio-apps-action@@fix_deploy
+        uses: adobe/aio-apps-action@fix_deploy
         with:
           os: ${{ matrix.os }}
           command: auth
@@ -49,7 +49,7 @@ jobs:
         env:
           AIO_RUNTIME_NAMESPACE: ${{ secrets.AIO_RUNTIME_NAMESPACE_STAGE }}
           AIO_RUNTIME_AUTH: ${{ secrets.AIO_RUNTIME_AUTH_STAGE }}
-        uses: adobe/aio-apps-action@@fix_deploy
+        uses: adobe/aio-apps-action@fix_deploy
         with:
           os: ${{ matrix.os }}
           command: deploy
